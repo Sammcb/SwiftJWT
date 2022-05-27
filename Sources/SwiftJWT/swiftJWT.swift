@@ -26,6 +26,7 @@ struct Payload: Encodable {
 	}
 }
 
+@main
 struct SwiftJWT: ParsableCommand {
 	static let configuration = CommandConfiguration(abstract: "Generates a JWT token.")
 	
@@ -75,5 +76,3 @@ struct SwiftJWT: ParsableCommand {
 		print(token)
 	}
 }
-
-SwiftJWT.main()
