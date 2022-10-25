@@ -28,15 +28,15 @@ struct Payload: Encodable {
 
 @main
 struct SwiftJWT: ParsableCommand {
-	static let configuration = CommandConfiguration(abstract: "Generates a JWT token.")
+	static let configuration = CommandConfiguration(abstract: "Generates a JWT token.", version: "1.0.1")
 	
-	@Argument(help: "Path to secret.")
+	@Argument(help: "Path to secret")
 	var secretPath: String
 	
-	@Argument(help: "Key ID.")
+	@Argument(help: "Key ID")
 	var keyId: String
 	
-	@Argument(help: "Developer ID.")
+	@Argument(help: "Developer ID")
 	var devId: String
 	
 	func validate() throws {

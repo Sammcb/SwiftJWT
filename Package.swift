@@ -1,11 +1,11 @@
-// swift-tools-version:5.6
+// swift-tools-version:5.7
 import PackageDescription
 
 let package = Package(
 	name: "SwiftJWT",
 	platforms: [.macOS(.v12)],
 	dependencies: [
-		.package(url: "https://github.com/apple/swift-argument-parser", from: "1.1.2")
+		.package(url: "https://github.com/apple/swift-argument-parser", from: "1.1.4")
 	],
 	targets: [
 		.executableTarget(
