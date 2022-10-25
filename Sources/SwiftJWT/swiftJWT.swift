@@ -28,7 +28,7 @@ struct Payload: Encodable {
 
 @main
 struct SwiftJWT: ParsableCommand {
-	static let configuration = CommandConfiguration(abstract: "Generates a JWT token.", version: "1.0.0")
+	static let configuration = CommandConfiguration(abstract: "Generates a JWT token.", version: "1.0.1")
 	
 	@Argument(help: "Path to secret")
 	var secretPath: String
